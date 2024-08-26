@@ -18,7 +18,7 @@ export const Navbar = () => {
     return (
         <div className="sticky top-0 z-50 backdrop-blur-md bg-black/10">
             <div className="flex justify-between p-2 items-center">
-                <div className="flex items-center pl-2 font-medium gap-x-2">
+                <Link href="/" className="flex items-center pl-2 font-medium gap-x-2">
                     <Image src='/company-logo.png' alt="logo" width={60} height={60}
                         className="rounded-full p-1" />
                     <div>
@@ -26,7 +26,7 @@ export const Navbar = () => {
                             Global Electronics Solutions </p>
                         <p className="text-[12px] text-gray-500"> Global Electronic Solutions, Gurgaon, Gurugram, Haryana</p>
                     </div>
-                </div>
+                </Link>
                 <div className="hidden md:flex items-center gap-x-2">
                     <NavigationMenu>
                         <NavigationMenuList>
