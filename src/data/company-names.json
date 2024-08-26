@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "NMB Technologies Corporation",
+        "image" : "/nmb.jpeg",
+        "link" : "/nmb",
+        "desc": ""
+    },
+    {
+        "name" : "EBM PAPST",
+        "image" : "/emb.jpg",
+        "link" : "/ebm",
+        "desc": ""
+    },
+    {
+        "name" : "SUNON",
+        "image" : "/sunon.jpeg",
+        "link" : "/sunon",
+        "desc" :"For decades, SUNON has consistently concentrated on its core motor technology, and as a result, we have accumulated various inventions and innovations in this field We now provide 17mm~120mm DC Fan & Blower series and offer the most effective thermal solutions."
+    },
+    {
+        "name" : "ADDA",
+        "image" : "/adda.png",
+        "link" : "/adda",
+        "desc": "ADDA is a leader in the electronic thermal management field For more than eight years ADDA has developed a broad range of products designed to extend the life of electronic components primarily used for the information technology industry Now, we develop and manufacture on two continents and intend to expand our manufacturing further We are diligently servicing our markets worldwide."
+    },
+    {
+        "name" : "Melco",
+        "image" : "/melco.jpeg",
+        "link" : "/melco",
+        "desc": ""
+    },
+    {
+        "name" : "Sanyo Denki",
+        "image" : "/sanyo.jpg",
+        "link" : "/sanyo",
+        "desc": ""
+    },
+    {
+        "name" : "DELTA",
+        "image" : "/delta.jpg",
+        "link" : "/delta",
+        "desc": ""
+    }
+]

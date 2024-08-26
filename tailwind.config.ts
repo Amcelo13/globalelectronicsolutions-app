@@ -15,9 +15,15 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "md": "820px",
+        "sm": "640px",
       },
     },
     extend: {
+      screens: {
+        "above-sm": "770px",
+        "custom-1":"526px"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

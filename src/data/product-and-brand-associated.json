@@ -1,0 +1,42 @@
+[
+    {
+        "type" : "Cooling Fans",
+        "companies": [
+            "DELTA" , "Melco"
+        ],
+        "image": "/cooling-fan.jpeg"
+    },
+    {
+        "type" : "Axial Fans",
+        "companies": [
+            "NMB Technologies Corporation",
+            "EBM PAPST",
+            "ADDA",
+            "SUNON",
+            "Sanyo Denki",
+            "Melco"
+
+        ],
+        "image": "/axial-fan.jpg"
+    },
+    {
+        "type" : "MultiPurpose Fans",
+        "companies": [
+            "NMB Technologies Corporation",
+            "ADDA",
+            "Sanyo Denki",
+            "Melco"
+        ],
+        "image": "/multipurpose-fan.jpeg"
+    },
+    {
+        "type" : "Heater Fans",
+        "companies": [
+            "NMB Technologies Corporation",
+            "ADDA",
+            "SUNON",
+            "SUNON"
+        ],
+        "image": "/heater-fan.jpeg"
+    }
+]
