@@ -48,7 +48,7 @@ const Footer = () => {
                         {
                             CompanyNames.map((company, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <p key={index} className={`cursor-pointer hover:underline text-left py-2`}>{company.name}</p>
                                     </div>
                                 )
@@ -62,7 +62,7 @@ const Footer = () => {
                         {
                             Products.map((product, index) => {
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         <p key={index} className={`cursor-pointer hover:underline text-left py-2`}>{product.type}</p>
                                     </div>
                                 )

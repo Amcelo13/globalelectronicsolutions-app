@@ -7,7 +7,7 @@ const Advantages = () => {
             <div className="mx-10 flex-col custom-1:flex-row flex gap-6">
                 <Image src='/warehouse.jpg' alt="logo" width={580} height={386} className="w-full basis-[45%] object-cover" />
                 <div className='flex flex-col gap-y-3 justify-center'>
-                    <p className='text-[#16bed4] text-[25px] font-bold'>India's #1</p>
+                    <p className='text-[#16bed4] text-[25px] font-bold'>India`&apos;s #1</p>
                     <p className='text-[32px] font-bold py-4'> Wholesale Trader of Cooling Fans</p>
                     A multi-brands supplier offering in-stock products and sourcing you-required products.
                 </div>
@@ -35,7 +35,7 @@ const Advantages = () => {
                 <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                     <div>
                         {
-                            Services.left.map((service, index) => <div className='p-7'>
+                            Services.left.map((service, index) => <div key={index} className='p-7'>
                                 <p className='font-bold'>{service.title}</p>
                                 <p>{service.desc}</p>
                             </div>)
@@ -46,7 +46,7 @@ const Advantages = () => {
                     </div>
                     <div>
                         {
-                            Services.right.map((service, index) => <div className='p-7'>
+                            Services.right.map((service, index) => <div key={index} className='p-7'>
                                 <p className='font-bold'>{service.title}</p>
                                 <p>{service.desc}</p>
                             </div>)

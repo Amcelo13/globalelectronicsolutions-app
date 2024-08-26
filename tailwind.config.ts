@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
+
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -22,7 +23,7 @@ const config = {
     extend: {
       screens: {
         "above-sm": "770px",
-        "custom-1":"526px"
+        "custom-1": "526px"
       },
       keyframes: {
         "accordion-down": {
@@ -38,9 +39,20 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      // clipPath: {
+      //   'custom': 'polygon(25% 0%, 100% 0%, 45% 35%, 0 0)',
+      // },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+  function ({ addUtilities }: any) {
+    addUtilities({
+      '.clip-path-custom': {
+        'clip-path': 'polygon(25% 0%, 100% 0%, 45% 35%, 0 0)',
+      },
+    });
+  },
+  ],
 } satisfies Config
 
 export default config

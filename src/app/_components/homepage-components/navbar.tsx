@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input"
 import { HamburgerMenuIcon } from "@radix-ui/react-icons"
 import {  Accordion, AccordionContent, AccordionItem,  AccordionTrigger,} from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import { SearchIcon } from "lucide-react"
+import { Phone, SearchIcon } from "lucide-react"
 
 export const Navbar = () => {
     const [open, setOpen] = React.useState(false);
@@ -20,7 +20,7 @@ export const Navbar = () => {
             <div className="flex justify-between p-2 items-center">
                 <Link href="/" className="flex items-center pl-2 font-medium gap-x-2">
                     <Image src='/company-logo.png' alt="logo" width={60} height={60}
-                        className="rounded-full p-1" />
+                        className="rounded-full p-1" priority />
                     <div>
                         <p className="text-[24px] leading-none font-bold">
                             Global Electronics Solutions </p>
@@ -84,8 +84,14 @@ export const Navbar = () => {
                         </SheetContent>
                     </Sheet>
                 </div>
-            </div>
-
+             <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[38px] left-0 bg-[#16bed4] p-2 rounded-lg">
+                  <Phone size={18}/> 
+                  <Link  href='tel:+91 2344223343' className="text-[14px]">+91 2344223343
+                  </Link>
+                  <Link href='tel:+91 8046042702' className="text-[14px]">+91 8046042702
+                  </Link>
+             </div>
+            </div>        
         </div>
     )
 }

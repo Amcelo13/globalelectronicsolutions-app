@@ -12,7 +12,7 @@ const ListOfManufacturers = () => {
          {
           CompanyNames.map((company, index) => {
             return (
-              <div>
+              <div key={index}>
                 <p  key={index} className={`flex items-center justify-center cursor-pointer text-center
                   hover:bg-[#16bed4] hover:underline hover:text-white text-[25px] font-bold py-3 h-[200px] ${index % 2 === 0 ? 'bg-[#e0e8f0]' : 'bg-[#cbd5e1]'}`}>{company.name}</p>
               </div>
