@@ -70,7 +70,7 @@ export const Navbar = () => {
                                                 {
                                                     CompanyNames.map((company, index) => (
                                                         <p className="hover:text-yellow-500 hover:underline font-medium" key={index}>
-                                                            <Link href={`/company/${company.name.toLowerCase()}`}>{company.name}</Link>
+                                                            <Link href={`/companies/${company.link}`}>{company.name}</Link>
                                                         </p>
                                                     ))
                                                 }
