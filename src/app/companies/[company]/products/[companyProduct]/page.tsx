@@ -206,8 +206,7 @@ export default function CompanyProduct() {
                     <p className="flex-1 p-3">Products You May Also Like</p>
                     <Separator className="basis-[40%] bg-yellow-300 h-2 w-2" />
                 </div>
-
-                <Carousel className="flex gap-6"
+                <Carousel className="flex gap-6 p-8"
                     swipeable={true}
                     draggable={true}
                     showDots={false}
@@ -218,9 +217,9 @@ export default function CompanyProduct() {
                     autoPlaySpeed={2000}
                     keyBoardControl={true}
                     customTransition="all .5"
-                    transitionDuration={500}
+                    transitionDuration={1500}
                     containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    removeArrowOnDeviceType={[]}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
@@ -228,13 +227,11 @@ export default function CompanyProduct() {
                             companyFound?.products.filter((obj: any) => obj.name != productFound?.name).map((product, index) => (
                                 <Link href={`/companies/${company}/products/${product.name}`} key={index} className="bg-white p-4 hover:scale-105 transition-all rounded-md cursor-pointer flex flex-col justify-center items-center">
                                     <Image src={product.image[0]} alt={''} width={300} height={300} className="w-[250px] aspect-square object-cover rounded-lg" />
-                                    <p className="text-[18px] w-full text-center font-bold py-3">{product.name} <ExternalLink className="text-gray-400  w-full" /></p>
+                                    <p className="text-[18px] w-full text-center font-bold py- overflow-clip text-ellipsis break-words py-3">{product.name} <ExternalLink className="text-gray-400  w-full" /></p>
                                 </Link>
                             ))
                         }
                 </Carousel>
-
-
             </div>}
 
         </div>

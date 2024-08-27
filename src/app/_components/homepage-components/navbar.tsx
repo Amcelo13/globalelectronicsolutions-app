@@ -9,12 +9,17 @@ import {
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input"
 import { HamburgerMenuIcon } from "@radix-ui/react-icons"
-import {  Accordion, AccordionContent, AccordionItem,  AccordionTrigger,} from "@/components/ui/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import { Phone, SearchIcon } from "lucide-react"
+import { Cross, Phone, SearchIcon, X } from "lucide-react"
+import SearchResults from "./search-results"
 
 export const Navbar = () => {
-    const [open, setOpen] = React.useState(false);
+    const [value, setValue] = React.useState("");
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(e.target.value);
+    }
+    const [open, setOpen] = React.useState(false)
     return (
         <div className="sticky top-0 z-50 backdrop-blur-md bg-black/10">
             <div className="flex justify-between p-2 items-center">
@@ -44,14 +49,21 @@ export const Navbar = () => {
                                     </NavigationMenuLink>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-                               <Button variant={'ghost'}>
-                               <Link href="/about" className="text-[14px] font-medium">About</Link>
-                               </Button>
+                            <Button variant={'ghost'}>
+                                <Link href="/about" className="text-[14px] font-medium">About</Link>
+                            </Button>
                         </NavigationMenuList>
                     </NavigationMenu>
                     <div className="relative pl-3 flex items-center gap-x-2">
-                        <Input size={40} className="border border-white bg-transparent" placeholder="Search products or by company name" />
-                        <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400" />
+                        <Input size={40} onChange={onChange} value={value} className="border border-white bg-transparent" placeholder="Search products or by company name" />
+                        {value === '' ? (
+                            <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" />
+                        ) : (
+                            <X
+                                onClick={() => setValue('')}
+                                className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
+                            />
+                        )}
                     </div>
 
                 </div>
@@ -62,36 +74,39 @@ export const Navbar = () => {
                         </SheetTrigger>
                         <SheetContent side={"right"}>
                             {/* <SheetClose asChild> */}
-                                <div className="flex flex-col gap-y-2 p-4">
-                                    <Accordion type="single" collapsible className="w-full">
-                                        <AccordionItem value="item-1">
-                                            <AccordionTrigger>Companies</AccordionTrigger>
-                                            <AccordionContent className="flex flex-col gap-y-2 p-4">
-                                                {
-                                                    CompanyNames.map((company, index) => (
-                                                        <SheetClose className="hover:text-yellow-500 hover:underline font-medium" key={index}>
-                                                            <Link onClick={() => setOpen(false)} href={`/companies/${company.link}`}>{company.name}</Link>
-                                                        </SheetClose>
-                                                    ))
-                                                }
-                                            </AccordionContent>
-                                        </AccordionItem>
-                                    </Accordion>
-                                    <Link href="/about" className="text-[14px] font-medium">About</Link>
-                                </div>
+                            <div className="flex flex-col gap-y-2 p-4">
+                                <Accordion type="single" collapsible className="w-full">
+                                    <AccordionItem value="item-1">
+                                        <AccordionTrigger>Companies</AccordionTrigger>
+                                        <AccordionContent className="flex flex-col gap-y-2 p-4">
+                                            {
+                                                CompanyNames.map((company, index) => (
+                                                    <SheetClose className="hover:text-yellow-500 hover:underline font-medium" key={index}>
+                                                        <Link onClick={() => setOpen(false)} href={`/companies/${company.link}`}>{company.name}</Link>
+                                                    </SheetClose>
+                                                ))
+                                            }
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>
+                                <Link href="/about" className="text-[14px] font-medium">About</Link>
+                            </div>
 
                             {/* </SheetClose> */}
                         </SheetContent>
                     </Sheet>
                 </div>
-             <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[38px] left-0 bg-[#16bed4] p-2 rounded-lg">
-                  <Phone size={18}/> 
-                  <Link  href='tel:+91 2344223343' className="text-[14px]">+91 2344223343
-                  </Link>
-                  <Link href='tel:+91 8046042702' className="text-[14px]">+91 8046042702
-                  </Link>
-             </div>
-            </div>        
+                <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[38px] left-0 bg-[#16bed4] p-2 rounded-lg">
+                    <Phone size={18} />
+                    <Link href='tel:+91 2344223343' className="text-[14px]">+91 2344223343
+                    </Link>
+                    <Link href='tel:+91 8046042702' className="text-[14px]">+91 8046042702
+                    </Link>
+                </div>
+                <div className="absolute top-[60px] right-2 bg-white rounded-lg shadow-lg">
+                    {value && <SearchResults value={value} onClose={() => setValue('')} />}
+                </div>
+            </div>
         </div>
     )
 }
