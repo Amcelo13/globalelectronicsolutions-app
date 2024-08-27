@@ -13,9 +13,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@
 import { Button } from "@/components/ui/button"
 import { Cross, Phone, SearchIcon, X } from "lucide-react"
 import SearchResults from "./search-results"
+import { usePathname } from "next/navigation"
 
 export const Navbar = () => {
     const [value, setValue] = React.useState("");
+    const pathName = usePathname()
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);
     }
@@ -49,7 +51,7 @@ export const Navbar = () => {
                                     </NavigationMenuLink>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-                            <Button variant={'ghost'}>
+                            <Button variant={'ghost'} className={`${pathName === '/about' ? 'bg-white' : ''}`}>
                                 <Link href="/about" className="text-[14px] font-medium">About</Link>
                             </Button>
                         </NavigationMenuList>
@@ -96,7 +98,7 @@ export const Navbar = () => {
                         </SheetContent>
                     </Sheet>
                 </div>
-                <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[38px] left-0 bg-[#16bed4] p-2 rounded-lg">
+                <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[37.5px] left-0 bg-[#16bed4] p-2 rounded-lg">
                     <Phone size={18} />
                     <Link href='tel:+91 2344223343' className="text-[14px]">+91 2344223343
                     </Link>
