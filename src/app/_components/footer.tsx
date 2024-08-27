@@ -72,18 +72,19 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex items-center justify-between pl-2 font-medium gap-x-2 border-t border-white mt-2 pt-2 pb-2">
-                <div className='flex gap-x-2 items-center'>
-                    <Image src='/company-logo.png' alt="logo" width={60} height={60}
-                        className="rounded-full p-1" />
-                    <div>
+                <div className='flex justify-between w-full gap-2 items-center flex-wrap'>
+                    <div className='flex justify-between gap-2 items-center flex-wrap'>
+                        <Image src='/company-logo.png' alt="logo" width={60} height={60}
+                            className="rounded-full p-1" />
                         <p className="text-[24px] leading-none font-bold">
-                            Global Electronics Solutions </p>
-                        <p className="text-[12px] text-gray-500"> Global Electronic Solutions, Gurgaon, Gurugram, Haryana</p>
+                            Global Electronics Solutions
+                            <p className="m-1 text-[12px] text-gray-500"> Global Electronic Solutions, Gurgaon, Gurugram, Haryana</p>
+                        </p>
                     </div>
-                </div>
                     <div className='max-w-[250px]'>
                         Copyright© 2024 Global Electronics Solutuons Co.,LTD All Rights Reserved
                     </div>
+                </div>
             </div>
         </div>
     )
