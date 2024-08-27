@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'plc-sensors.com',
+            hostname: 'www.plc-sensors.com',
             pathname: '**',
           },
         ],

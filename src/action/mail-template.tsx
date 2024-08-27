@@ -21,8 +21,8 @@ const SendUserEmail: React.FC<ResendEmailType> = (props) => {
           Message - {message}
         </p>
         {
-          quantity && productName && <p>
-            Product Name - <b>{productName}</b>
+          quantity  && <p>
+            Product Name - <b>{productName}</b> <br />
             Quantity - <b>{quantity}</b>
           </p>
         }

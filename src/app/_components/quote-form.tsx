@@ -33,21 +33,20 @@ export const QuoteForm = (props: QuoteFormProps) => {
     const { formState: { errors }, handleSubmit, register } = method
     const submit = (data: QuoteFormData) => {
         let { file, ...rest } = data
-        if (file && (file as any)[0].size > 5000000) {
+        if (file && (file as any)[0]?.size > 5000000) {
             alert('File size should be less than 5MB')
             return
         }
         let payload: any = { ...rest }
         if (Object.keys(selectedProduct).length > 0) {
-            payload = { ...rest, productName: (selectedProduct as any).name }
-            payload = { ...rest, quantity: (selectedProduct as any).quantity }
+            payload = { ...rest, productName: (selectedProduct as any).name, quantity: (selectedProduct as any).quantity }
         }
         startTransition(async () => {
             const formFile = new FormData()
             if (file) {
                 formFile.append('file', (file as any)[0])
             }
-            const res: any = await sendMail(rest, formFile)
+            const res: any = await sendMail(payload, formFile)
             if(res.data === 'Email sent successfully') {
                 onClose()
                 alert('Email sent successfully')
