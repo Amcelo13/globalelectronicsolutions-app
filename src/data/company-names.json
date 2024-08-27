@@ -4,42 +4,527 @@
         "image": "/nmb.jpeg",
         "link": "/nmb",
         "desc": "NMB Technologies Corporation is a MinebeaMitsumi Group company; the world's largest manufacturer of NMB miniature ball bearings and a volume leader in the design and manufacturing of precision electromechanical and semiconductor components such as small motors, backlights, sensors and wireless technology We provide advanced technology solutions for the automotive, robotics, medical, consumer technology, industrial, and smart city markets.",
-        "products": []
+        "products": [
+            {
+                "name": "1604KL-04W-B49  NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1604KL-04W-B49.png",
+                    "/NMB/1604KL-04W-B49-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "1604KL-04W-B49",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 10 MM",
+                "voltage": "12 VDC",
+                "current": "0.10 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "1608VL-05W-B49 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608VL-05W-B49.png",
+                    "/NMB/1608VL-05W-B49-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "1608VL-05W-B49",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.13 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "1608KL-05W-B69 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608KL-05W-B69.webp",
+                    "/NMB/1608KL-05W-B69-1.webp"
+                ],
+                "type": "Axial",
+                "part_number": "1608KL-05W-B69",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.13 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "5915PC-22T-B30 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/5915PC-22T-B30.webp",
+                    "/NMB/5915PC-22T-B30-1.webp"
+                ],
+                "type": "Axial",
+                "part_number": "5915PC-22T-B30",
+                "ac_dc": "DC",
+                "size": "150 MM x 172 MM x 38 MM",
+                "voltage": "220 VDC",
+                "current": "40/38 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "4715MS-22T-B50 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/4715MS-22T-B50.webp"
+                ],
+                "type": "Axial",
+                "part_number": "4715MS-22T-B50",
+                "ac_dc": "AC",
+                "size": "92 MM x 92 MM x 38 MM",
+                "voltage": "220 VDC",
+                "current": "13/14 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "1608KL-05W-B49 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608KL-05W-B49.png",
+                    "/NMB/1608KL-05W-B49-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "1608KL-05W-B49",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.07 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "3615KL-05W-B70 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608KL-05W-B49.png",
+                    "/NMB/1608KL-05W-B49-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "3615KL-05W-B70",
+                "ac_dc": "DC",
+                "size": "92 MM x 92 MM x 25 MM",
+                "voltage": "24 VDC",
+                "current": "0.70 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "4715MS-23T-B5A NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/4715MS-23T-B5A.png",
+                    "/NMB/4715MS-23T-B5A-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "4715MS-23T-B5A",
+                "ac_dc": "AC",
+                "size": "120 MM x 120 MM x 38 MM",
+                "voltage": "230 VDC",
+                "current": "15/14 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "4710KL-05W-B50 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/4710KL-05W-B50.png",
+                    "/NMB/4710KL-05W-B50-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "4710KL-05W-B50",
+                "ac_dc": "DC",
+                "size": "120 MM x 120 MM x 38 MM",
+                "voltage": "24 VDC",
+                "current": "0.38 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "1608KL-05W-B39 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608KL-05W-B39.png",
+                    "/NMB/1608KL-05W-B39-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "1608KL-05W-B39",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.08 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "1608KL-05W-B50 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/1608KL-05W-B50.png",
+                    "/NMB/1608KL-05W-B50-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "1608KL-05W-B50",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.11 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "5915PC-20T-B30 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/5915PC-20T-B30.png",
+                    "/NMB/5915PC-20T-B30-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "5915PC-20T-B30",
+                "ac_dc": "AC",
+                "size": "172 MM x 150 MM x 38 MM",
+                "voltage": "200 VDC",
+                "current": "33 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "4715SL-05W-B60 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/4715SL-05W-B60.png",
+                    "/NMB/4715SL-05W-B60-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "4715SL-05W-B60",
+                "ac_dc": "DC",
+                "size": "120 MM x 120 MM x 38 MM",
+                "voltage": "24 VDC",
+                "current": "1.20 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "3610KL-04W-B59 NMB Technologies Corporation Cooling Fan",
+                "image": [
+                    "/NMB/3610KL-04W-B59.png",
+                    "/NMB/3610KL-04W-B59-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "3610KL-04W-B59",
+                "ac_dc": "DC",
+                "size": "92 MM x 92 MM x 25 MM",
+                "voltage": "12 VDC",
+                "current": "0.43 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "EBM PAPST",
         "image": "/emb.jpg",
         "link": "/ebm",
         "desc": "Ebm-papst is active in the development, production and sale of motors, fans and pumps The company is considered the world market leader for electric motors and fans and the leading supplier of fans for heat pumps in Europe The motors and fans manufactured by the ebm-papst group find application in various sectors,",
-        "products": []
+        "products": [
+            {
+                "name": "6314 HR EBM-PAPST Cooling Fan",
+                "image": [
+                    "/EBM/6314 HR.webp",
+                    "/EBM/6314 HR-1.jpg"
+                ],
+                "type": "Axial",
+                "part_number": "6314 HR",
+                "ac_dc": "DC",
+                "size": "172 mm x 172 mm x 50 mm",
+                "voltage": "24 VDC",
+                "current": "1.5 A",
+                "termination": "2 Wires",
+                "material": "Metal",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "AC 6200 NMIR EBM-PAPST Cooling Fan",
+                "image": [
+                    "/EBM/AC 6200 NMIR.webp",
+                    "/EBM/AC 6200 NMIR-1.jpg"
+                ],
+                "type": "Air Cooling Fan",
+                "part_number": "AC 6200 NMIR",
+                "ac_dc": "AC",
+                "size": "172 mm x 172 mm x 51 mm",
+                "voltage": "115 VAC, 230 VAC",
+                "current": "11.5 W",
+                "termination": "2 Pin",
+                "material": "Metal",
+                "color": "Black",
+                "warranty": "Not Specified",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "4650N-351 EBM-PAPST Cooling Fan",
+                "image": [
+                    "/EBM/4650N-351.webp",
+                    "/EBM/4650N-351-1.webp"
+                ],
+                "type": "Axial",
+                "part_number": "4650N-351",
+                "ac_dc": "DC",
+                "size": "120 MM x 120 MM x 38 MM",
+                "voltage": "230 VDC",
+                "current": "19/18 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "63182 TDHHP EBM-PAPST Cooling Fan",
+                "image": [
+                    "/EBM/63182 TDHHP.webp",
+                    "/EBM/63182 TDHHP-1.webp"
+                ],
+                "type": "Air Cooling Fan",
+                "part_number": "6318/2TDHHP",
+                "ac_dc": "DC",
+                "size": "172 mm x 172 mm x 50 mm",
+                "voltage": "48 VDC",
+                "current": "1.38 A",
+                "termination": "4 Wires",
+                "material": "Metal",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "SUNON",
         "image": "/sunon.jpeg",
         "link": "/sunon",
         "desc": "For decades, SUNON has consistently concentrated on its core motor technology, and as a result, we have accumulated various inventions and innovations in this field We now provide 17mm~120mm DC Fan & Blower series and offer the most effective thermal solutions.",
-        "products": []
+        "products": [
+            {
+                "name": "PMD2408PTB1-A SUNON Cooling Fan",
+                "image": [
+                    "/SUNON/PMD2408PTB1-A.png",
+                    "/SUNON/PMD2408PTB1-A-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "PMD2408PTB1-A",
+                "ac_dc": "DC",
+                "size": "80 MM x 80 MM x 24 MM",
+                "voltage": "24 VDC",
+                "current": "5 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "KDE2406PHV2 SUNON Cooling Fan",
+                "image": [
+                    "/SUNON/KDE2406PHV2.png",
+                    "/SUNON/KDE2406PHV2-1.webp"
+                ],
+                "type": "Axial",
+                "part_number": "KDE2406PHV2",
+                "ac_dc": "DC",
+                "size": "60 MM x 60 MM x 15 MM",
+                "voltage": "24 VDC",
+                "current": "1.3 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "ADDA",
         "image": "/adda.png",
         "link": "/adda",
         "desc": "ADDA is a leader in the electronic thermal management field For more than eight years ADDA has developed a broad range of products designed to extend the life of electronic components primarily used for the information technology industry Now, we develop and manufacture on two continents and intend to expand our manufacturing further We are diligently servicing our markets worldwide.",
-        "products": []
+        "products": [
+            {
+                "name": "AD0924XB-FBGP ADDA Cooling Fan",
+                "image": [
+                    "/ADDA/AD0924XB-FBGP.png",
+                    "/ADDA/AD0924XB-FBGP-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "AD0924XB-FBGP",
+                "ac_dc": "DC",
+                "size": "92 MM x 92 MM x 25 MM",
+                "voltage": "24 VDC",
+                "current": "0.3 A",
+                "termination": "4 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "Melco",
         "image": "/melco.jpeg",
         "link": "/melco",
         "desc": "Melco Industrial Supplies Co., Ltd was established in 1971 as an importer and distributor for fastener products in Hong Kong Since then, Melco has become one of the market leaders in manufacturing our own products and sales of high quality screws & fasteners from Japan as well.",
-        "products": []
+        "products": [
+            {
+                "name": "MMF-04C24DS Melco Cooling Fan",
+                "image": [
+                    "/Melco/MMF-04C24DS.png",
+                    "/Melco/MMF-04C24DS-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "MMF-04C24DS",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 10 MM",
+                "voltage": "24 VDC",
+                "current": "0.09 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "Sanyo Denki",
         "image": "/sanyo.jpg",
         "link": "/sanyo",
         "desc": "SANYO DENKI Group has been creating new value by developing industry-leading products that always pursue high performance, high quality, and high added value Our products have long supported factory and office automation and have these days become indispensable in cutting-edge applications such as semiconductors and IT infrastructure Moving forward, we will continue to pioneer innovative technologies and uphold leadership in global manufacturing",
-        "products": []
+        "products": [
+            {
+                "name": "109P0424H302 Sanyo Denki Cooling Fan",
+                "image": [
+                    "/Sanyo Denki/109P0424H302.png",
+                    "/Sanyo Denki/109P0424H302-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "109P0424H302",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 28 MM",
+                "voltage": "24 VDC",
+                "current": "0.095 A",
+                "termination": "2 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "9WF0424H6D05A Sanyo Denki Cooling Fan",
+                "image": [
+                    "/Sanyo Denki/9WF0424H6D05A.png",
+                    "/Sanyo Denki/9WF0424H6D05A-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "9WF0424H6D05A",
+                "ac_dc": "DC",
+                "size": "40 MM x 40 MM x 20 MM",
+                "voltage": "24 VDC",
+                "current": "0.08 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            }
+        ]
     },
     {
         "name": "DELTA",
@@ -48,8 +533,11 @@
         "desc": "Delta Group Delta designs and builds innovative cooling systems that excel even in the harshest environments Delta Fan and Thermal product line includes a comprehensive range of axial fans, blowers, and thermal management products Our unique patented blade design and innovative structure significantly enhance cooling performance while reducing system noise Delta fans and thermal products are available worldwide, serving various industries and organizations Our highly efficient cooling and ventilation systems can be customized to meet the needs of virtually any business.",
         "products": [
             {
-                "name": "EFB1524SHG DELTA Cooling Fan",
-                "image" : ["/EFB1524SHG.jpg", "EFB1524SHG-1.jpg"],
+                "name": "AFB0924HH DELTA Cooling Fan",
+                "image": [
+                    "/Delta/AFB0924HH.png",
+                    "/Delta/AFB0924HH-1.png"
+                ],
                 "type": "Axial",
                 "part_number": "AFB0924HH",
                 "ac_dc": "DC",
@@ -62,6 +550,45 @@
                 "warranty": "1 Year",
                 "rpm": "None",
                 "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "EFB0512HA DELTA Cooling Fan",
+                "image": [
+                    "/Delta/EFB0512HA.png",
+                    "/Delta/EFB0512HA-1.png"
+                ],
+                "type": "Axial",
+                "part_number": "EFB0512HA",
+                "ac_dc": "DC",
+                "size": "50 MM x 50 MM x 10 MM",
+                "voltage": "12 VDC",
+                "current": "0.15 A",
+                "termination": "3 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "None",
+                "airflow": "None CFM",
+                "instock": "Yes"
+            },
+            {
+                "name": "EFB1524SHG DELTA Cooling Fan",
+                "image": [
+                    "/Delta/EFB1524SHG.png"
+                ],
+                "type": "Axial",
+                "part_number": "EFB1524SHG",
+                "ac_dc": "DC",
+                "size": "172 MM x 150 MM x 50 MM",
+                "voltage": "24 VDC",
+                "current": "2.1 A",
+                "termination": "4 Wires/Pins",
+                "material": "Plastic",
+                "color": "Black",
+                "warranty": "1 Year",
+                "rpm": "4300",
+                "airflow": "325 CFM",
                 "instock": "Yes"
             }
         ]

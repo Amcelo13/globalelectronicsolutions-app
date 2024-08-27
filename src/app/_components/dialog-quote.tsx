@@ -7,10 +7,14 @@ interface DialogProps {
     positionFixed?: boolean
     title: string
     triggerTxtBg?: boolean
+    selectedProduct? : {
+        name: string
+        quantity: number    
+    }
 }
 
 const DialogQuoate = (props: DialogProps) => {
-    const { triggerTxt, title, positionFixed = false, triggerTxtBg = false } = props
+    const { triggerTxt, title, positionFixed = false, triggerTxtBg = false, selectedProduct } = props
     return (
         <Dialog>
             <DialogTrigger className={`${positionFixed ? 'fixed' : ''} right-4 bottom-4`}>
@@ -24,7 +28,7 @@ const DialogQuoate = (props: DialogProps) => {
                     <DialogDescription>
                         Our product expert is standing by to give 24/7 consultation.
                     </DialogDescription>
-                    <QuoteForm />
+                    <QuoteForm selectedProduct={selectedProduct} />
                 </DialogHeader>
             </DialogContent>
         </Dialog>

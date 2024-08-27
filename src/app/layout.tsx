@@ -1,3 +1,4 @@
+import ProgressBar from "@/providers/progress-bar";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+         <ProgressBar>
         <Navbar/>
         {children}
         <Footer/>
+         </ProgressBar>
         </body>
         <DialogQuoate triggerTxtBg positionFixed triggerTxt= 'Request a Quote' title= 'Request a Quote'/>
     </html>

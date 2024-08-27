@@ -69,9 +69,9 @@ export const Navbar = () => {
                                             <AccordionContent className="flex flex-col gap-y-2 p-4">
                                                 {
                                                     CompanyNames.map((company, index) => (
-                                                        <p className="hover:text-yellow-500 hover:underline font-medium" key={index}>
-                                                            <Link href={`/companies/${company.link}`}>{company.name}</Link>
-                                                        </p>
+                                                        <SheetClose className="hover:text-yellow-500 hover:underline font-medium" key={index}>
+                                                            <Link onClick={() => setOpen(false)} href={`/companies/${company.link}`}>{company.name}</Link>
+                                                        </SheetClose>
                                                     ))
                                                 }
                                             </AccordionContent>

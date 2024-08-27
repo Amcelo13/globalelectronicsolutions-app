@@ -8,6 +8,7 @@ import { ExternalLink } from "lucide-react"
 import TalkToExperts from "./_components/homepage-components/talk-to-experts";
 import ListOfManufacturers from "./_components/homepage-components/list-of-manufacturers";
 import Advantages from "./_components/homepage-components/advantages";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -50,12 +51,16 @@ export default function Home() {
               <div key={index} className="bg-white p-4 rounded-md transition-all hover:border">
                 <Image src={product.image} alt={''} width={300} height={300} className="w-full aspect-square object-cover rounded-lg" />
                 <p className="text-[18px] font-bold py-3">{product.type}</p>
-                <p className="text-[14px]">{
-                  product.companies.map((company, index) => <p className="flex items-center gap-2 cursor-pointer hover:underline hover:text-yellow-500" key={index}>
-                    <ExternalLink className="text-gray-400" />
-                    <p> {company}</p>
-                  </p>)
-                }</p>
+                <p className="text-[14px]">
+                  {
+                    Object.keys(product.companies[0]).map((key:any, index) => {
+                      return <Link href={`/companies${(product.companies[0] as any)[key]}`}  className="flex items-center gap-2 cursor-pointer hover:underline hover:text-yellow-500" key={index}> 
+                      <ExternalLink className="text-gray-400" />
+                      <p> {key}</p>
+                    </Link>
+                    }
+                    )
+                  }</p>
               </div>
             ))}
         </div>

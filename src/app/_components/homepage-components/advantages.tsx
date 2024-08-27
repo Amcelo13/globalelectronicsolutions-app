@@ -4,7 +4,7 @@ import Services from '@/data/services.json'
 const Advantages = () => {
     return (
         <div className='mt-[120px]'>
-            <div className="mx-10 flex-col custom-1:flex-row flex gap-6">
+            <div className="mx-10 flex-col md:flex-row flex gap-6">
                 <Image src='/warehouse.jpg' alt="logo" width={580} height={386} className="w-full basis-[45%] object-cover" />
                 <div className='flex flex-col gap-y-3 justify-center'>
                     <p className='text-[#16bed4] text-[25px] font-bold'>India`&apos;s #1</p>

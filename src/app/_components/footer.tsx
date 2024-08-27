@@ -48,9 +48,9 @@ const Footer = () => {
                         {
                             CompanyNames.map((company, index) => {
                                 return (
-                                    <div key={index}>
+                                    <Link href={`/companies/${company.link}`} key={index} className={`cursor-pointer hover:underline text-left py-2`}>
                                         <p key={index} className={`cursor-pointer hover:underline text-left py-2`}>{company.name}</p>
-                                    </div>
+                                    </Link>
                                 )
                             })
                         }
