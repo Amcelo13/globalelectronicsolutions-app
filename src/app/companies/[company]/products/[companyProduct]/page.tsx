@@ -14,6 +14,7 @@ import { Download, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import SvgComponent from "@/arrow";
 
 export default function CompanyProduct() {
     const { company, companyProduct } = useParams();
@@ -178,10 +179,13 @@ export default function CompanyProduct() {
             </div>
 
             <div className="mt-2 p-6 bg-white rounded-lg flex flex-col custom-1:flex-row gap-y-4 gap-x-6">
-                <div className="bg-[#16bed4] rounded-r-lg basis-[70%] -ml-9 p-5">
+                <div className="relative bg-[#16bed4] rounded-r-lg basis-[70%] -ml-9 p-5">
                     <p className="text-[36px] font-bold text-white">Unmatched customer Service</p>
+                    <div className="absolute right-20 top-15">
+                    <SvgComponent/>
+                    </div>
                 </div>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 bg-white rounded-lg">
                     <div className="flex flex-col justify-center items-center gap-3 shadow-lg p-6 rounded-md cursor-pointer transition-all hover:scale-95">
                         <Image src='/c-1.png' width={100} height={100} className="rounded-full " alt='' />
                         <p>After Hours Shipping</p>

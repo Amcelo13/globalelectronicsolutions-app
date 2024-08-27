@@ -82,7 +82,7 @@ const Footer = () => {
                     </div>
                 </div>
                     <div className='max-w-[250px]'>
-                        Copyright© 2021 Global Electronics Solutuons Co.,LTD All Rights Reserved
+                        Copyright© 2024 Global Electronics Solutuons Co.,LTD All Rights Reserved
                     </div>
             </div>
         </div>
