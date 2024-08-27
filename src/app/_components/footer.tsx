@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Products from '@/data/product-and-brand-associated.json'
 import React from 'react'
@@ -8,6 +10,10 @@ const Footer = () => {
     const address = "Plot No 180-181 Village Dhankot Global Electronic Solutions, Gurgaon - 122505, Gurugram, Haryana, India";
     const encodedAddress = encodeURIComponent(address);
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    const handleClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+    
     return (
         <div className='bg-[#16bed4] text-white p-8'>
             <div className='mx-auto'>
@@ -38,7 +44,8 @@ const Footer = () => {
                     {/* Home Column */}
                     <div className='flex flex-col gap-y-2'>
                         <h2 className='text-xl font-bold mb-4'>Quick Links</h2>
-                        <Link href='/' className={`hover:underline`}>Home</Link>
+                        <Link onClick={handleClick}
+                            href='/' className={`hover:underline`}>Home</Link>
                         <Link href='/about' className={`hover:underline`} >About</Link>
                     </div>
 
