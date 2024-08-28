@@ -19,6 +19,7 @@ export type ResendEmailType = {
 }
 
 export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
+    console.log('apiKey: ', apiKey);
     const systemFile: any = file?.get('file')!;
     let attachments: any = []
     if (systemFile) {
