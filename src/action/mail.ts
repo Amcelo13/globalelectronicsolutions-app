@@ -19,7 +19,6 @@ export type ResendEmailType = {
 }
 
 export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
-    console.log('apiKey: ', apiKey);
     const systemFile: any = file?.get('file')!;
     let attachments: any = []
     if (systemFile) {
@@ -35,7 +34,7 @@ export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
     try {
         const { data, error } = await resend.emails.send({
             from: process.env.COMPANY_RESEND_GMAIL_ACCOUNT as string,
-            to: 'tchetan308@gmail.com',
+            to: 'globalelectronicsggn@gmail.com',
             subject: `New Quote Request - ${payload.name as string}`,
             react: SendUserEmail(payload),
             attachments,
