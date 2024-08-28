@@ -34,7 +34,7 @@ export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
     try {
         const { data, error } = await resend.emails.send({
             from: process.env.COMPANY_RESEND_GMAIL_ACCOUNT as string,
-            to: 'globalelectronicsggn@gmail.com',
+            to: 'tchetan308@gmail.com',
             subject: `New Quote Request - ${payload.name as string}`,
             react: SendUserEmail(payload),
             attachments,
