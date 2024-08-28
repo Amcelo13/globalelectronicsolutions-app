@@ -26,7 +26,7 @@ export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
         const bufferFile = Buffer.from(contentBuffer);
         attachments = [
             {
-                content: bufferFile,
+                content: bufferFile, 
                 filename: systemFile?.name,
             }
         ]
