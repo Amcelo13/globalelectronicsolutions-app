@@ -46,8 +46,6 @@ export const sendMail = async (payload: ResendEmailType, file?: FormData) => {
                 error: 'Unable to send email'
             }
         }
-        console.log('data: ', data);
-
         return {
             data: 'Email sent successfully'
         }

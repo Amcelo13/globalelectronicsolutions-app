@@ -45,7 +45,7 @@ export default function Home() {
         <p className="p-4 bg-white flex items-center justify-center w-full text-[36px] font-bold text-black">
           Brand Products We Supply
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 p-3">
+        <div id="product-section" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 p-3">
           {
             ProductAndCompaniesAssociated.map((product, index) => (
               <div key={index} className="bg-white p-4 rounded-md transition-all hover:border">

@@ -11,7 +11,7 @@ const SendUserEmail: React.FC<ResendEmailType> = (props) => {
         <title>New Quote</title>
       </Head>
       <Container>
-        <h1>Hi Naresh we <b>have received your new quote request</b></h1>
+        <h1>Hi Naresh we <b>have received your new quote request from Global Electronic Solutions</b></h1>
         <p>
           Name - <b>{name}</b> <br />
           Email - <b>{email}</b> <br />
@@ -19,7 +19,8 @@ const SendUserEmail: React.FC<ResendEmailType> = (props) => {
         </p>
         <p>
           Message - {message}
-        </p>
+        </p> <br /> <br />
+        <b>Product Enquiry</b>
         {
           quantity  && <p>
             Product Name - <b>{productName}</b> <br />

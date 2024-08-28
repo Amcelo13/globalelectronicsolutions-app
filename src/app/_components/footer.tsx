@@ -12,8 +12,14 @@ const Footer = () => {
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
     const handleClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-      };
-    
+    };
+
+    const handleClickProductSection = () => {
+        const productSection = document.getElementById('product-section');
+        if (productSection) {
+            productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
     return (
         <div className='bg-[#16bed4] text-white p-8'>
             <div className='mx-auto'>
@@ -69,9 +75,9 @@ const Footer = () => {
                         {
                             Products.map((product, index) => {
                                 return (
-                                    <div key={index}>
+                                    <Link href='/' key={index} onClick={handleClickProductSection}>
                                         <p key={index} className={`cursor-pointer hover:underline text-left py-2`}>{product.type}</p>
-                                    </div>
+                                    </Link>
                                 )
                             })
                         }

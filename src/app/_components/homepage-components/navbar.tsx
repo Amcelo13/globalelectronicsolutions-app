@@ -93,14 +93,12 @@ export const Navbar = () => {
                                 </Accordion>
                                 <Link href="/about" className="text-[14px] font-medium">About</Link>
                             </div>
-
-                            {/* </SheetClose> */}
                         </SheetContent>
                     </Sheet>
                 </div>
                 <div className="absolute text-white font-bold flex items-center gap-3 -bottom-[37.5px] left-0 bg-[#16bed4] p-2 rounded-lg">
                     <Phone size={18} />
-                    <Link href='tel:+91 2344223343' className="text-[14px]">+91 2344223343
+                    <Link href='tel:+91 9992828527' className="text-[14px]">+91 9992828527
                     </Link>
                     <Link href='tel:+91 8046042702' className="text-[14px]">+91 8046042702
                     </Link>
