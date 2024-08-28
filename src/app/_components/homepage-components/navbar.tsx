@@ -77,13 +77,27 @@ export const Navbar = () => {
                         <SheetContent side={"right"}>
                             {/* <SheetClose asChild> */}
                             <div className="flex flex-col gap-y-2 p-4">
+                                {
+                                    Array.from({ length: 2 }).map((_, index) => {
+                                        if(index === 0) return(
+                                            <SheetClose className="hover:text-yellow-500 hover:underline text-left font-medium" key={index}>
+                                                    <Link onClick={() => setOpen(false)} href="/">Home</Link>
+                                            </SheetClose>
+                                         )
+                                         else return(
+                                            <SheetClose className="hover:text-yellow-500 hover:underline text-left font-medium" key={index}>
+                                                <Link onClick={() => setOpen(false)} href="/about">About</Link>
+                                            </SheetClose>
+                                         )
+                                    })
+                                }
                                 <Accordion type="single" collapsible className="w-full">
                                     <AccordionItem value="item-1">
                                         <AccordionTrigger>Companies</AccordionTrigger>
                                         <AccordionContent className="flex flex-col gap-y-2 p-4">
                                             {
                                                 CompanyNames.map((company, index) => (
-                                                    <SheetClose className="hover:text-yellow-500 hover:underline font-medium" key={index}>
+                                                    <SheetClose className="hover:text-yellow-500 hover:underline text-left font-medium" key={index}>
                                                         <Link onClick={() => setOpen(false)} href={`/companies/${company.link}`}>{company.name}</Link>
                                                     </SheetClose>
                                                 ))
@@ -91,7 +105,6 @@ export const Navbar = () => {
                                         </AccordionContent>
                                     </AccordionItem>
                                 </Accordion>
-                                <Link href="/about" className="text-[14px] font-medium">About</Link>
                             </div>
                         </SheetContent>
                     </Sheet>
