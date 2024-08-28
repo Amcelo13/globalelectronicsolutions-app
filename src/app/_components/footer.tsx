@@ -14,12 +14,12 @@ const Footer = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const handleClickProductSection = () => {
-        const productSection = document.getElementById('product-section');
-        if (productSection) {
-            productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
+    // const handleClickProductSection = () => {
+    //     const productSection = document.getElementById('product-section');
+    //     if (productSection) {
+    //         productSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    //     }
+    // };
     return (
         <div className='bg-[#16bed4] text-white p-8'>
             <div className='mx-auto'>
@@ -75,7 +75,7 @@ const Footer = () => {
                         {
                             Products.map((product, index) => {
                                 return (
-                                    <Link href='/' key={index} onClick={handleClickProductSection}>
+                                    <Link href='/#product-section' key={index}>
                                         <p key={index} className={`cursor-pointer hover:underline text-left py-2`}>{product.type}</p>
                                     </Link>
                                 )

@@ -148,9 +148,9 @@ export default function CompanyProduct() {
             <div className="mt-2 p-6 bg-white rounded-lg">
                 <div className="flex justify-between items-center mb-4 flex-wrap">
                     <h2 className="text-2xl font-semibold">Specifications</h2>
-                    <Button variant="outline" className="bg-cyan-300 hover:bg-cyan-400">
+                    {/* <Button variant="outline" className="bg-cyan-300 hover:bg-cyan-400">
                         <Download className="mr-2 h-4 w-4" /> Download A Manual
-                    </Button>
+                    </Button> */}
                 </div>
                 <Table>
                     <TableBody>
