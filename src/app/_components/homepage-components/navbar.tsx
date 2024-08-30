@@ -113,7 +113,7 @@ export const Navbar = () => {
                     <Phone size={18} />
                     <Link href='tel:+91 9992828527' className="text-[14px]">+91 9992828527
                     </Link>
-                    <Link href='tel:+91 8046042702' className="text-[14px]">+91 8046042702
+                    <Link href='tel:+91 9115513907' className="text-[14px]">+91 9115513907
                     </Link>
                 </div>
                 <div className="absolute top-[60px] right-2 bg-white rounded-lg shadow-lg">

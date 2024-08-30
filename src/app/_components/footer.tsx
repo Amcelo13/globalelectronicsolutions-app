@@ -35,8 +35,8 @@ const Footer = () => {
                         </div>
                         <div className="mb-3">
                             <PhoneCall size={20} className='text-white text-[20px]' />
-                            <Link href="tel:08046042702" className="hover:underline">
-                                08046042702
+                            <Link href="tel:+91 9115513907" className="hover:underline">
+                                +91 9115513907
                             </Link>
                         </div>
                         <div className="mb-3">
