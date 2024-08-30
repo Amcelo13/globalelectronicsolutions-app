@@ -13,7 +13,7 @@ export default function Company() {
         <div>
              <title>{companyFound?.name}</title>
             <div className="relative">
-                <Image className="w-full h-full object-cover absolute -z-10" src='https://www.plc-sensors.com/wp-content/themes/mml-theme/dist/img/common/s01-bg.jpg' alt="logo" width={1280} height={853} />
+                <Image className="w-full h-full object-cover absolute -z-10" src={companyFound?.extraIMG ?? ""} alt="logo" width={1280} height={853} />
                 <div className="bg-gray-400/80 custom-1:p-32 p-10 text-white font-bold text-5xl overflow-clip text-ellipsis break-words">
                     {companyFound?.name}
                 </div>

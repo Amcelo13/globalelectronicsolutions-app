@@ -13,7 +13,7 @@
         "type": "Axial Fans",
         "companies": [
             {
-                "NMB Technologies Corporation": "/nmb",
+                "NMB": "/nmb",
                 "EBM PAPST": "/ebm",
                 "ADDA": "/adda",
                 "SUNON": "/sunon",
@@ -27,7 +27,7 @@
         "type": "Panel Cooling Fans",
         "companies": [
             {
-                "NMB Technologies Corporation": "/nmb",
+                "NMB": "/nmb",
                 "ADDA": "/adda",
                 "Sanyo Denki": "/sanyo",
                 "Melco": "/melco"
@@ -39,7 +39,7 @@
         "type": "Heater Fans",
         "companies": [
             {
-                "NMB Technologies Corporation": "/nmb",
+                "NMB": "/nmb",
                 "ADDA": "/adda",
                 "SUNON": "/sunon",
                 "EBM PAPST": "/ebm"

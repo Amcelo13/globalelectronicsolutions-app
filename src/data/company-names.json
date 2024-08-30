@@ -1,7 +1,8 @@
 [
     {
-        "name": "NMB Technologies Corporation",
+        "name": "NMB",
         "image": "/nmb.jpeg",
+        "extraIMG": "/NMB 1.jpg",
         "link": "/nmb",
         "desc": "NMB Technologies Corporation is a MinebeaMitsumi Group company; the world's largest manufacturer of NMB miniature ball bearings and a volume leader in the design and manufacturing of precision electromechanical and semiconductor components such as small motors, backlights, sensors and wireless technology We provide advanced technology solutions for the automotive, robotics, medical, consumer technology, industrial, and smart city markets.",
         "products": [
@@ -289,6 +290,7 @@
     {
         "name": "EBM PAPST",
         "image": "/emb.jpg",
+        "extraIMG" :"/EBM.png",
         "link": "/ebm",
         "desc": "Ebm-papst is active in the development, production and sale of motors, fans and pumps The company is considered the world market leader for electric motors and fans and the leading supplier of fans for heat pumps in Europe The motors and fans manufactured by the ebm-papst group find application in various sectors,",
         "products": [
@@ -377,6 +379,7 @@
     {
         "name": "SUNON",
         "image": "/sunon.jpeg",
+        "extraIMG": "/Sunon.png",
         "link": "/sunon",
         "desc": "For decades, SUNON has consistently concentrated on its core motor technology, and as a result, we have accumulated various inventions and innovations in this field We now provide 17mm~120mm DC Fan & Blower series and offer the most effective thermal solutions.",
         "products": [
@@ -425,6 +428,7 @@
     {
         "name": "ADDA",
         "image": "/adda.png",
+        "extraIMG": "/adda.png",
         "link": "/adda",
         "desc": "ADDA is a leader in the electronic thermal management field For more than eight years ADDA has developed a broad range of products designed to extend the life of electronic components primarily used for the information technology industry Now, we develop and manufacture on two continents and intend to expand our manufacturing further We are diligently servicing our markets worldwide.",
         "products": [
@@ -453,6 +457,7 @@
     {
         "name": "Melco",
         "image": "/melco.jpeg",
+        "extraIMG": "/melco.jpeg",
         "link": "/melco",
         "desc": "Melco Industrial Supplies Co., Ltd was established in 1971 as an importer and distributor for fastener products in Hong Kong Since then, Melco has become one of the market leaders in manufacturing our own products and sales of high quality screws & fasteners from Japan as well.",
         "products": [
@@ -481,6 +486,7 @@
     {
         "name": "Sanyo Denki",
         "image": "/sanyo.jpg",
+        "extraIMG": "/Sanyo Denki 3.png",
         "link": "/sanyo",
         "desc": "SANYO DENKI Group has been creating new value by developing industry-leading products that always pursue high performance, high quality, and high added value Our products have long supported factory and office automation and have these days become indispensable in cutting-edge applications such as semiconductors and IT infrastructure Moving forward, we will continue to pioneer innovative technologies and uphold leadership in global manufacturing",
         "products": [
@@ -529,6 +535,7 @@
     {
         "name": "DELTA",
         "image": "/delta.jpg",
+        "extraIMG": "/Delta - Copy.png",
         "link": "/delta",
         "desc": "Delta Group Delta designs and builds innovative cooling systems that excel even in the harshest environments Delta Fan and Thermal product line includes a comprehensive range of axial fans, blowers, and thermal management products Our unique patented blade design and innovative structure significantly enhance cooling performance while reducing system noise Delta fans and thermal products are available worldwide, serving various industries and organizations Our highly efficient cooling and ventilation systems can be customized to meet the needs of virtually any business.",
         "products": [

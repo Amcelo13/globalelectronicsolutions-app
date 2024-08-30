@@ -25,7 +25,11 @@ export default function Home() {
           <CarouselMainContainer className="h-full">
             {Array.from({ length: 2 }).map((_, index) => (
               <SliderMainItem key={index} className="bg-transparent">
-                <Image src='/fan.jpg' alt="logo" width={1280} height={853} className="w-full h-full object-cover" />
+                 {
+                  index === 0 ?   <Image src='/Home Page 1.png' alt="logo" width={1280} height={853} className="w-full h-full object-cover" />
+                   :
+                    <Image src='/Home Page.png' alt="logo" width={1280} height={853} className="w-full h-full object-cover" />
+                 }
               </SliderMainItem>
             ))}
           </CarouselMainContainer>

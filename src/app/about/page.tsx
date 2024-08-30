@@ -25,7 +25,7 @@ export default function Home() {
                     <div className="flex-1">
                         <h1 className="text-3xl font-bold mb-4">About The Company</h1>
                         {/* Add the Company Brand Logo here */}
-                        <Image src='/CompanyBrandLogo.webp' width={200} height={200} alt='Company Logo' className='mb-4 rounded-lg' />
+                        <Image src='/Global Logo.png' width={200} height={200} alt='Company Logo' className='mb-4 rounded-lg' />
                         <p className="mb-4">
                             Established in year 2020, Global Electronic Solution is the leading Wholesale Trader of Cooling Fans, Duct Fans, Axial Fans, Cooling Fan, Centrifugal Fans, Inline Fan, Inflatable Blower, also engaged in Trading and Supplying an exceptional quality array of Electrical Capacitor, Integrated Circuit And Component, Electrical Connector, SMD Capacitor And Fuse, Power Mosfet Transistor, Rectifier And Diode, Electronic Resistors, Electrical Transistors, Industrial Relays, etc We have an advanced infrastructural base that is equipped with all the essential amenities. Thus, we aim to understand the diverse needs of our clients and offer suitable range of products . We are known to make use of the best quality components, coupled with the latest technology.. We are known to make use of the best quality components, coupled with the latest technology. Being a client-centric firm, our main aim is to accomplish the customers needs very competently.
                         </p>
