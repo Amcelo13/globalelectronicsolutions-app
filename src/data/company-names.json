@@ -1,7 +1,7 @@
 [
     {
         "name": "NMB",
-        "image": "/NMB.jpg",
+        "image": "/nmb.jpg",
         "extraIMG": "/NMB 1.jpg",
         "link": "/nmb",
         "desc": "NMB Technologies Corporation is a MinebeaMitsumi Group company; the world's largest manufacturer of NMB miniature ball bearings and a volume leader in the design and manufacturing of precision electromechanical and semiconductor components such as small motors, backlights, sensors and wireless technology We provide advanced technology solutions for the automotive, robotics, medical, consumer technology, industrial, and smart city markets.",
@@ -456,8 +456,8 @@
     },
     {
         "name": "Melco",
-        "image": "/Melco.jpg",
-        "extraIMG": "/Melco.jpg",
+        "image": "/,melco.jpg",
+        "extraIMG": "/,melco.jpg",
         "link": "/melco",
         "desc": "Melco Industrial Supplies Co., Ltd was established in 1971 as an importer and distributor for fastener products in Hong Kong Since then, Melco has become one of the market leaders in manufacturing our own products and sales of high quality screws & fasteners from Japan as well.",
         "products": [
