@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Global Electronics Solutions Website
+
+This repository contains the source code for the Global Electronics Solutions website, built using Next.js and Framer Motion.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [Framer Motion](https://www.framer.com/motion/) - Animation library for React
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+
+## Features
+
+[List some key features of your website here. For example:]
+- Responsive design
+- Animated page transitions
+- Interactive UI elements
+- [Any other notable features]
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version X.X.X or higher)
+- npm (version X.X.X or higher)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone [https://github.com/yourusername/global-electronics-solutions.git](https://github.com/Amcelo13/globalelectronicsolutions-app)
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Navigate to the project directory:
+   ```
+   cd global-electronics-solutions
+   ```
 
-## Learn More
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+[Add information about how you deploy the website, e.g., Vercel, Netlify, etc.]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[If you want to allow contributions, add guidelines here]
+
+## License
+
+[Add your license information here]
+
+## Contact
+
+[Your Name] - [your.email@example.com]
+
+Project Link: [https://github.com/yourusername/global-electronics-solutions](https://github.com/yourusername/global-electronics-solutions)
