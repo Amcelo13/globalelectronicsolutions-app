@@ -14,20 +14,15 @@ This repository contains the source code for the Global Electronics Solutions we
 - Responsive design
 - Animated page transitions
 - Interactive UI elements
-- [Any other notable features]
+- Resend email service
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js (version X.X.X or higher)
-- npm (version X.X.X or higher)
 
 ### Installation
 
 1. Clone the repository:
    ```
-   git clone [https://github.com/yourusername/global-electronics-solutions.git](https://github.com/Amcelo13/globalelectronicsolutions-app)
+   https://github.com/Amcelo13/globalelectronicsolutions-app
    ```
 
 2. Navigate to the project directory:
@@ -47,20 +42,5 @@ This repository contains the source code for the Global Electronics Solutions we
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployment
 
-[Add information about how you deploy the website, e.g., Vercel, Netlify, etc.]
-
-## Contributing
-
-[If you want to allow contributions, add guidelines here]
-
-## License
-
-[Add your license information here]
-
-## Contact
-
-[Your Name] - [your.email@example.com]
-
-Project Link: [https://github.com/yourusername/global-electronics-solutions](https://github.com/yourusername/global-electronics-solutions)
+Project Link: [https://globalelectronicsolutions.in]
