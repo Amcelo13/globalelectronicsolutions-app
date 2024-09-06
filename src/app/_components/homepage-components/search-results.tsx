@@ -8,10 +8,11 @@ import Image from 'next/image'
 interface SearchResultsProps {
     value: string
     onClose: () => void
+    setOpen?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const SearchResults = (props: SearchResultsProps) => {
-    const { value, onClose } = props
+    const { value, onClose, setOpen } = props
     const allProducts = useMemo(() => CompanyNames.flatMap(company =>
         company.products.map(product => ({
             ...product,
@@ -33,14 +34,17 @@ const SearchResults = (props: SearchResultsProps) => {
         [allProducts, value]
     );
     return (
-        <ScrollArea className={`${filteredProducts.length > 0 ? "h-[450px]" : "h-[50px]"} w-[350px] p-4 transition-all fade-in-70`} >
+        <ScrollArea className={`${filteredProducts.length > 0 ? "h-[450px]" : "h-[50px]"} sm:w-[350px] w-full p-4 transition-all fade-in-70`} >
             {filteredProducts.length > 0 ? filteredProducts.map((product, index) => (
-                    <Link onClick={onClose} href={`/companies/${product.companyLink}/products/${product.name}`} key={index} className="flex gap-2 p-4 bg-white border-b rounded-md transition-all hover:scale-105 hover:border cursor-pointer">
-                        <Image src={product.image[0]} alt={''} width={20} height={20} className="w-16 h-16 aspect-square object-cover rounded-lg" />
-                        <p className='text-sm'>
-                            <b>{product.name} </b>{product.companyName} {product.part_number} {product.type} {product.size} {product.material} {product.color}
-                        </p>
-                    </Link>
+                <Link onClick={() => {
+                    onClose()
+                    setOpen && setOpen(false)
+                }} href={`/companies/${product.companyLink}/products/${product.name}`} key={index} className="flex gap-2 p-4 bg-white border-b rounded-md transition-all hover:scale-105 hover:border cursor-pointer">
+                    <Image src={product.image[0]} alt={''} width={20} height={20} className="w-16 h-16 aspect-square object-cover rounded-lg" />
+                    <p className='text-sm'>
+                        <b>{product.name} </b>{product.companyName} {product.part_number} {product.type} {product.size} {product.material} {product.color}
+                    </p>
+                </Link>
             ))
                 :
                 <p className="text-center">No results found</p>}

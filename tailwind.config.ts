@@ -23,7 +23,8 @@ const config = {
     extend: {
       screens: {
         "above-sm": "770px",
-        "custom-1": "526px"
+        "custom-1": "526px",
+        // "small":"300px"
       },
       keyframes: {
         "accordion-down": {

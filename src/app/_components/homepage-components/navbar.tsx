@@ -22,6 +22,19 @@ export const Navbar = () => {
         setValue(e.target.value);
     }
     const [open, setOpen] = React.useState(false)
+    const searchComponent = (
+        <div className="relative pl-3 flex items-center gap-x-2">
+            <Input size={40} onChange={onChange} value={value} className="border md:border-white bg-transparent border-gray-500" placeholder="Search products or by company name" />
+            {value === '' ? (
+                <SearchIcon className="md:block hidden absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" />
+            ) : (
+                <X
+                    onClick={() => setValue('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
+                />
+            )}
+        </div>
+    )
     return (
         <div className="sticky top-0 z-50 backdrop-blur-md bg-black/10">
             <div className="flex justify-between p-2 items-center">
@@ -56,18 +69,7 @@ export const Navbar = () => {
                             </Button>
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <div className="relative pl-3 flex items-center gap-x-2">
-                        <Input size={40} onChange={onChange} value={value} className="border border-white bg-transparent" placeholder="Search products or by company name" />
-                        {value === '' ? (
-                            <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" />
-                        ) : (
-                            <X
-                                onClick={() => setValue('')}
-                                className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
-                            />
-                        )}
-                    </div>
-
+                    {searchComponent}
                 </div>
                 <div className="flex md:hidden pr-3">
                     <Sheet open={open} onOpenChange={setOpen}>
@@ -75,20 +77,25 @@ export const Navbar = () => {
                             <HamburgerMenuIcon />
                         </SheetTrigger>
                         <SheetContent side={"right"}>
-                            {/* <SheetClose asChild> */}
+                            <div className="mt-4">
+                                {searchComponent}
+                            </div>
+                            <div className="absolute top-[80px] right-2 bg-white rounded-lg shadow-lg">
+                                {value && <SearchResults value={value} setOpen={setOpen} onClose={() => setValue('')} />}
+                            </div>
                             <div className="flex flex-col gap-y-2 p-4">
                                 {
                                     Array.from({ length: 2 }).map((_, index) => {
-                                        if(index === 0) return(
+                                        if (index === 0) return (
                                             <SheetClose className="hover:text-yellow-500 hover:underline text-left font-medium" key={index}>
-                                                    <Link onClick={() => setOpen(false)} href="/">Home</Link>
+                                                <Link onClick={() => setOpen(false)} href="/">Home</Link>
                                             </SheetClose>
-                                         )
-                                         else return(
+                                        )
+                                        else return (
                                             <SheetClose className="hover:text-yellow-500 hover:underline text-left font-medium" key={index}>
                                                 <Link onClick={() => setOpen(false)} href="/about">About</Link>
                                             </SheetClose>
-                                         )
+                                        )
                                     })
                                 }
                                 <Accordion type="single" collapsible className="w-full">
@@ -116,7 +123,7 @@ export const Navbar = () => {
                     <Link href='tel:+91 9115513907' className="text-[14px]">+91 9115513907
                     </Link>
                 </div>
-                <div className="absolute top-[60px] right-2 bg-white rounded-lg shadow-lg">
+                <div className="md:block hidden absolute top-[60px] right-2 bg-white rounded-lg shadow-lg">
                     {value && <SearchResults value={value} onClose={() => setValue('')} />}
                 </div>
             </div>
